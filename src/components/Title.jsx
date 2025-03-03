@@ -21,9 +21,9 @@ function Title() {
                 </div>
                 <div className='text-white flex flex-col justify-end'>
                     <ul className='flex gap-4 justify-start opacity-50'>
-                        <li>Linkedin</li>
-                        <li>Instagram</li>
-                        <li>Github</li>
+                        <li><a href="https://www.linkedin.com/in/suvamchoudhury">Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/_nyctophile.ig_/">Instagram</a></li>
+                        <li><a href='https://github.com/nyctophile07/'>Github</a></li>
                     </ul>
                 </div>
             </motion.div>
