@@ -1,12 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-function Expandables({ isExpanded, onHover, domain, skills }) {
-    console.log(isExpanded, onHover, domain, skills)
+function Expandables({ isExpanded, onHover, domain, skills, link, linkText }) {
 
     return (
         <motion.div
-            className={`expandable boxshadow ${isExpanded ? 'expanded' : 'compressed'}`}
+            className={`flex flex-col gap-4 expandable boxshadow ${isExpanded ? 'expanded' : 'compressed'}`}
             onMouseEnter={onHover}
             initial={{ width: '150px',height:'fit-content' }}
             animate={{ width: isExpanded ? '500px' : '300px' }}
@@ -28,6 +27,7 @@ function Expandables({ isExpanded, onHover, domain, skills }) {
                      })}
                 </ul>
             )}
+           {isExpanded && (<a className='px-6 py-3 rounded-full bg-black text-white w-min text-sm' href={link}>{linkText}</a>)} 
         </motion.div>
     );
 }
