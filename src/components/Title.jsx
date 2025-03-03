@@ -14,8 +14,8 @@ function Title() {
                     <h1>
                         I am<motion.span 
                         initial={{ color: 'white' }}
-                        animate={{ color: '#99FFE7' }}
-                        transition={{ duration: 5}}
+                        animate={{ color: '#8ec5ff' }}
+                        transition={{ duration: 1}}
                         className='font-[700] transition-colors duration-5000'> Suvam Choudhury</motion.span>
                     </h1>
                 </div>

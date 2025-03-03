@@ -5,3 +5,6 @@ body {
     background-color: #272727;
     font-family: 'Instrument Sans', Poppins, sans-serif;
 }
+body::-webkit-scrollbar {
+    display: none;
+}

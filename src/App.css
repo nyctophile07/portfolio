@@ -31,3 +31,34 @@
     padding: 5px 20px;
     margin: 5px;
 }
+
+.expandable {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 30px;
+    transition: width 0.3s ease;
+  }
+  .boxshadow{
+    box-shadow: #a9a9a9 5px 5px 100px ;
+  }
+  
+  .expandable span {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .expandable ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .compressed ul {
+    display: none;
+  }
+  
+  .expanded ul {
+    display: block;
+  }
