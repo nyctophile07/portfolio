@@ -2,13 +2,17 @@ import { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Navbar from './components/navbar';
 import './App.css';
-import { Desktop } from './components/desktop';
 import Title from './components/Title';
 import Hero from './components/Hero';
 import Webd from './components/Webd';
 import Bio from './components/Bio';
 import Expandables from './components/Expandables';
 import Exp from './components/Exp';
+import Project from './components/Project';
+
+import dzinkImage from './components/assets/1730353689305-1.png';
+import elibraryImage from './components/assets/1730366272485-1.png';
+
 
 function App() {
   const skillset = [
@@ -34,6 +38,16 @@ function App() {
       link: "https://www.instagram.com/grafix.me/",
       linkText: "My works"
     },
+  ]
+  const project= [
+    {img: dzinkImage,
+      title:"DZINK",
+        desc:"An Ecom. web app featuring a diverse collection of merchandise across a wide range of categories and varieties.",
+      link:"https://dzink.rf.gd/"},
+    { img: elibraryImage,
+      title:"e-Library",
+        desc:"Explore diverse genres, engage in discussions, and join a community passionate about reading and learning.",
+      link:"https://elib.rf.gd/"}
   ]
   const controls = useAnimation();
   const [expandedIndex, setExpandedIndex] = useState(0);
@@ -64,7 +78,7 @@ function App() {
       </header>
       <motion.section
         id="about"
-        className="text-white w-[70vw] m-auto flex justify-between pt-20"
+        className="text-white w-[80vw] m-auto flex justify-between pt-10"
         initial={{ y: 50, opacity: 0 }}
         animate={controls}
         transition={{ duration: 1 }}
@@ -72,7 +86,7 @@ function App() {
         <Webd />
         <Bio />
       </motion.section>
-      <section id='skillset' className='w-[75vw] m-auto mb-10 py-40 flex flex-col gap-5'>
+      <section id='skillset' className='w-[80vw] m-auto mb-10 py-40 flex flex-col gap-5'>
         <div><h2 className='text-left text-4xl text-blue-300 font-bold'>Things i have learnt</h2></div>
 
         <div className='flex justify-around'>{skillset.map((e, index) => {
@@ -88,10 +102,25 @@ function App() {
         })}</div>
       </section>
 
-      <section id='experience' className='w-[75vw] flex flex-col gap-3 m-auto mt-10 mb-10 py-20'>
+      <section id='experience' className='w-[75vw] flex flex-col gap-3 m-auto py-30'>
         <Exp />
       </section>
-      {/* <Desktop /> */}
+      <section id='projects' className='w-[75vw] m-auto mb-10 flex gap-20 pb-20'>
+        <ul
+         initial={{ y: 50, opacity: 0 }}
+         animate={controls}
+         transition={{ duration: 1 }}
+        className='text-yellow-300 flex flex-col gap-4 justify-center'>
+          <li>P</li>
+        <li>R</li>
+        <li>O</li>
+        <li>J</li>
+        <li>E</li>
+        <li>C</li>
+        <li>T</li>
+        <li>S</li></ul>
+        <Project project={project}/>
+      </section>
     </>
   );
 }

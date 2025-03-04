@@ -7,7 +7,7 @@ function Skills(props) {
          <motion.div whileHover={
             { backgroundColor: "#f9f9f9",
             color: "#000",
-            scale:1.05
+            scale:1.03
             , transition: { duration: 0.2 }}            
          } key={index} className="skill cursor-pointer">{skill}</motion.div>
         )

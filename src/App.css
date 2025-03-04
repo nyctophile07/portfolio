@@ -11,7 +11,6 @@
 }
 .hero-image{
     position: absolute;
-    top: -18px;
     background-image: url('./components/assets/DSC01995web.jpg');
     background-size: cover;
     background-position: center;
@@ -62,3 +61,16 @@
   .expanded ul {
     display: block;
   }
+
+  .project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    color: white;
+    border-radius: 30px;
+    background-color: black;
+    overflow: hidden;
+    box-shadow: 5px 3px 2px rgb(255, 251, 44);
+  }
+ 
