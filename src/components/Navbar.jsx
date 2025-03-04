@@ -8,7 +8,7 @@ function Navbar() {
                 <motion.a whileHover={{ scale: 1.07, opacity:0.7 }} transition={{ duration: 0.3 }} href='#about'>ABOUT ME</motion.a>
                 <motion.a whileHover={{ scale: 1.07, opacity:0.7 }} transition={{ duration: 0.3 }} href='#skillset'>SKILLS</motion.a>
                 <motion.a whileHover={{ scale: 1.07, opacity:0.7 }} transition={{ duration: 0.3 }} href='#experience'>EXPERIENCE</motion.a>
-                <motion.a whileHover={{ scale: 1.07, opacity:0.7 }} transition={{ duration: 0.3 }} href=''>CONTACTS</motion.a>
+                <motion.a whileHover={{ scale: 1.07, opacity:0.7 }} transition={{ duration: 0.3 }} href='#footer'>CONTACTS</motion.a>
         </nav>
     );
 }

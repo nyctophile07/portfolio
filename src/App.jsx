@@ -9,9 +9,12 @@ import Bio from './components/Bio';
 import Expandables from './components/Expandables';
 import Exp from './components/Exp';
 import Project from './components/Project';
+import img1 from './components/assets/gallery.png';
+
 
 import dzinkImage from './components/assets/1730353689305-1.png';
 import elibraryImage from './components/assets/1730366272485-1.png';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -105,7 +108,7 @@ function App() {
       <section id='experience' className='w-[75vw] flex flex-col gap-3 m-auto py-30'>
         <Exp />
       </section>
-      <section id='projects' className='w-[75vw] m-auto mb-10 flex gap-20 pb-20'>
+      <section id='projects' className='w-[75vw] m-auto mb-10 flex gap-20 pb-10'>
         <ul
          initial={{ y: 50, opacity: 0 }}
          animate={controls}
@@ -121,6 +124,23 @@ function App() {
         <li>S</li></ul>
         <Project project={project}/>
       </section>
+      <section className='w-[80vw] m-auto py-25'>
+        <ul className='text-white flex justify-center gap-7 text-lg font-[300] p-15'>
+          <li>M</li>
+          <li>Y&nbsp;&nbsp;</li>
+          <li>&nbsp;&nbsp;&nbsp;G</li>
+          <li>A</li>
+          <li>L</li>
+          <li>L</li>
+          <li>E</li>
+          <li>R</li>
+          <li>Y</li>
+        </ul>
+        <div className='gallery flex flex-wrap justify-center gap-5'>
+          <a href="https://www.instagram.com/_nyctophile.ig_"><img src={img1} alt="gallery" /></a>
+        </div>
+      </section>
+      <Footer/>
     </>
   );
 }

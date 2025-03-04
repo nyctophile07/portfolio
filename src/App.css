@@ -73,4 +73,19 @@
     overflow: hidden;
     box-shadow: 5px 3px 2px rgb(255, 251, 44);
   }
- 
+
+  .footer{
+    background-image: linear-gradient(#99FFE7, #268BFF);
+    border-radius: 20px 20px 0 0;
+    margin-top: 40px;
+  }
+  .footerimg{
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+ .footicon{
+  object-fit: cover;
+  object-position: center;
+  height: 40px;
+ }
