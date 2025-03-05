@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
-import '@fontsource/poppins'
+import '@fontsource/poppins'; // Add this line to import Poppins font
+import '@fontsource/poppins/200.css'; // Import Poppins 200 weight
+import '@fontsource/poppins/400.css'; // Import Poppins 400 weight (regular)
+import '@fontsource/poppins/700.css'; // Import Poppins 700 weight (bold)
+
 import { motion, useAnimation } from 'framer-motion';
 import Navbar from './components/navbar';
 import './App.css';
@@ -90,7 +94,7 @@ function App() {
         <Webd />
         <Bio />
       </motion.section>
-      <section id='skillset' className='w-[80vw] m-auto mb-10 py-40 flex flex-col gap-5'>
+      <section id='skillset' className='w-[80vw] m-auto mb-5 py-35 flex flex-col gap-5'>
         <div><h2 className='text-left text-4xl text-blue-300 font-bold'>Things i have learnt</h2></div>
 
         <div className='flex justify-around'>{skillset.map((e, index) => {
@@ -138,7 +142,7 @@ function App() {
           <li>Y</li>
         </ul>
         <div className='gallery flex flex-wrap justify-center gap-5'>
-          <a href="https://www.instagram.com/_nyctophile.ig_"><img src={img1} alt="gallery" /></a>
+          <a href="https://www.instagram.com/_nyctophile.ig_"><img className='h-[90vh]' src={img1} alt="gallery" /></a>
         </div>
       </section>
       <Footer/>

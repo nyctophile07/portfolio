@@ -8,7 +8,7 @@ function Expandables({ isExpanded, onHover, domain, skills, link, linkText }) {
             className={`flex flex-col gap-4 expandable boxshadow ${isExpanded ? 'expanded' : 'compressed'}`}
             onMouseEnter={onHover}
             initial={{ width: '150px',height:'fit-content' }}
-            animate={{ width: isExpanded ? '500px' : '300px' }}
+            animate={{ width: isExpanded ? '40%' : '28%' }}
             transition={{ duration: 0.3 }}
         >
             <motion.span
