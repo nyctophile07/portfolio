@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import '@fontsource/poppins'
 import { motion, useAnimation } from 'framer-motion';
 import Navbar from './components/navbar';
 import './App.css';
