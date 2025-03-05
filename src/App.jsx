@@ -86,7 +86,7 @@ function App() {
       </header>
       <motion.section
         id="about"
-        className="text-white w-[80vw] m-auto flex justify-between pt-10"
+        className="text-white w-[80vw] m-auto flex justify-between pt-5"
         initial={{ y: 50, opacity: 0 }}
         animate={controls}
         transition={{ duration: 1 }}

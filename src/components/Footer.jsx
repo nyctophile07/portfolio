@@ -9,7 +9,7 @@ function Footer() {
     <div className='footer' id='footer'>
         <div className='w-[80vw] m-auto py-15 flex justify-between'>
         <div className="footerdesc">
-        <h2 className='text-5xl py-7 font-[400]'>Let's have a conversation...</h2>
+        <h2 className='text-[6vmin] py-7 font-[400]'>Let's have a conversation...</h2>
         <p >Direct message to me:</p>
         <p className='pt-1'><span className='text-2xl font-bold'>@  </span><a href="mailto:suvamchoudhury18@gmail.com"> suvamchoudhury18@gmail.com</a></p>
         <p className='pt-1'><span className='text-2xl font-bold'>🕿  </span> +91 7064114285</p>

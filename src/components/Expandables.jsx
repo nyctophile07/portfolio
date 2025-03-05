@@ -13,7 +13,7 @@ function Expandables({ isExpanded, onHover, domain, skills, link, linkText }) {
         >
             <motion.span
                 className="title text-wrap"
-                animate={{ fontSize: isExpanded ? '1.5rem' : '2rem' }}
+                animate={{ fontSize: isExpanded ? '1.5rem' : '2.1rem' }}
                 transition={{ duration: 0.3 }}
             >
                 {domain}
@@ -22,7 +22,7 @@ function Expandables({ isExpanded, onHover, domain, skills, link, linkText }) {
                 <ul typeof='circle'>
                      {skills.map((e,index)=>{
                         return(
-                            <li className='text-wrap' key={index}>{e}</li>
+                            <li className='text-wrap text-[2.5vmin]' key={index}>{e}</li>
                          )
                      })}
                 </ul>

@@ -9,9 +9,9 @@ function Title() {
                 animate={{ scale: [0.96, 1, 0.96] }}
                 transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
                 className='title flex justify-between m-18 w-[80vw] sticky top-0 z-50'>
-                <div className="font-[200] z-10 text-left text-6xl text-white">
-                    <h1>Hello There,</h1>
-                    <h1>
+                <div className="font-[200] z-10 text-left text-[7vmin] text-white">
+                    <h1 className='m-[-25px]'>Hello There,</h1>
+                    <h1 className='m-[-25px]'>
                         I am<motion.span 
                         initial={{ color: 'white' }}
                         animate={{ color: '#8ec5ff' }}
