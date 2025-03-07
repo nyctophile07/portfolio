@@ -99,13 +99,30 @@
  @media (max-width: 400px) {
   .nav{
     position: fixed;
-    top: 86vh !important;
+    top: 86dvh !important;
     color: black !important;
     background-color: white !important;
-    border-radius: 25px;
-    font-size: 2vmin;
+    border-radius: 20px;
+    font-size: 3vmin;
     text-align: center;
+    gap: 20px;
+    padding: 15px 25px;
   }
+  .App-header{
+    min-height: 40vh !important;
+  }
+  .hero-image{
+    min-height:40vh !important;
+  }
+  .title{
+    margin: 20px 0;
+    gap: 20px;
+  }
+  .title h1{
+    font-size: 6vmin !important;
+    margin: -10px 0;
+  }
+
 
   #projects ul{
     flex-direction: row;
@@ -121,8 +138,12 @@
     text-align:center;
   }
 
-  .webd, .footerimg {
+  .webd, .footerimg, .exp-active {
     display: none;
+  }
+  #experience div{
+    margin: 0;
+    padding: 0;
   }
   .bio_container{
     width: 100% !important;
@@ -140,10 +161,23 @@
   }
   #projects{
     width: 100% !important;
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
   }
   .project-container {
     width: 90vw !important;
     border-radius: 20px;
+    margin: auto;
+  }
+  section{
+    width: 85vw !important;
+  }
+  .gallery img{
+    height: auto;
+    width: 100%;
+  }
+  .gall-text{
+    gap: 15px;
   }
 }

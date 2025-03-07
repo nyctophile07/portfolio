@@ -10,8 +10,8 @@ function Title() {
                 transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
                 className='title flex justify-between m-18 w-[80vw] sticky top-0 z-50'>
                 <div className="font-[200] z-10 text-left text-[7vmin] text-white">
-                    <h1 className='m-[-25px]'>Hello There,</h1>
-                    <h1 className='m-[-25px]'>
+                    <h1 className='m-[-20px]'>Hello There,</h1>
+                    <h1 className='m-[-20px]'>
                         I am<motion.span 
                         initial={{ color: 'white' }}
                         animate={{ color: '#8ec5ff' }}
@@ -20,7 +20,7 @@ function Title() {
                     </h1>
                 </div>
                 <div className='text-white flex flex-col justify-end'>
-                    <ul className='flex gap-4 justify-start opacity-50'>
+                    <ul className='text-[2.5vmin] flex gap-4 justify-start opacity-50'>
                         <li><a href="https://www.linkedin.com/in/suvamchoudhury">Linkedin</a></li>
                         <li><a href="https://www.instagram.com/_nyctophile.ig_/">Instagram</a></li>
                         <li><a href='https://github.com/nyctophile07/'>Github</a></li>

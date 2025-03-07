@@ -130,7 +130,7 @@ function App() {
         <Project project={project}/>
       </section>
       <section className='w-[80vw] m-auto py-25'>
-        <ul className='text-white flex justify-center gap-7 text-lg font-[300] p-15'>
+        <ul className='gall-text text-white flex justify-center gap-7 text-lg font-[300] p-15'>
           <li>M</li>
           <li>Y&nbsp;&nbsp;</li>
           <li>&nbsp;&nbsp;&nbsp;G</li>
