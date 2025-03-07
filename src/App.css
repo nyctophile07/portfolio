@@ -95,11 +95,17 @@
 #projects{
   overflow: hidden;
 }
+.nav-icon{
+  display: none;
+}
 
  @media (max-width: 400px) {
+  .nav-icon{
+    display:inline;
+  }
   .nav{
     position: fixed;
-    top: 86dvh !important;
+    top: 84dvh !important;
     color: black !important;
     background-color: white !important;
     border-radius: 20px;
@@ -141,6 +147,16 @@
   .webd, .footerimg, .exp-active {
     display: none;
   }
+  #experience{
+    padding-top:0;
+  }
+  #about{
+    margin-top: 15px;
+  }
+  .footer{
+    padding-bottom: 60px;
+  }
+
   #experience div{
     margin: 0;
     padding: 0;

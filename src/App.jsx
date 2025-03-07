@@ -60,22 +60,7 @@ function App() {
   const controls = useAnimation();
   const [expandedIndex, setExpandedIndex] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const aboutSection = document.getElementById('about');
-      const aboutPosition = aboutSection.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.2;
-
-      if (aboutPosition < screenPosition) {
-        controls.start({ y: 0, opacity: 1 });
-      } else {
-        controls.start({ y: 50, opacity: 0 });
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [controls]);
+ 
 
   return (
     <>
@@ -87,9 +72,8 @@ function App() {
       <motion.section
         id="about"
         className="text-white w-[80vw] m-auto flex justify-between pt-5"
-        initial={{ y: 50, opacity: 0 }}
-        animate={controls}
-        transition={{ duration: 1 }}
+        animate={{opacity: [0, 1]}}
+        transition={{ duration: 2 }}
       >
         <Webd />
         <Bio />
@@ -140,6 +124,7 @@ function App() {
           <li>E</li>
           <li>R</li>
           <li>Y</li>
+
         </ul>
         <div className='gallery flex flex-wrap justify-center gap-5'>
           <a href="https://www.instagram.com/_nyctophile.ig_"><img className='h-[90vh]' src={img1} alt="gallery" /></a>
