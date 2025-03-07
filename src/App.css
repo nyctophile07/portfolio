@@ -94,8 +94,6 @@
 }
 #projects{
   overflow: hidden;
-  flex-direction: column;
-  align-items: center;
 }
 
  @media (max-width: 400px) {
