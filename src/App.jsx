@@ -5,7 +5,7 @@ import '@fontsource/poppins/400.css'; // Import Poppins 400 weight (regular)
 import '@fontsource/poppins/700.css'; // Import Poppins 700 weight (bold)
 
 import { motion, useAnimation } from 'framer-motion';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import './App.css';
 import Title from './components/Title';
 import Hero from './components/Hero';
@@ -95,9 +95,9 @@ function App() {
         <Bio />
       </motion.section>
       <section id='skillset' className='w-[80vw] m-auto mb-5 py-35 flex flex-col gap-5'>
-        <div><h2 className='text-left text-4xl text-blue-300 font-bold'>Things i have learnt</h2></div>
+        <div><h2 className= 'heading text-left text-4xl text-blue-300 font-bold'>Things i have learnt</h2></div>
 
-        <div className='flex justify-around'>{skillset.map((e, index) => {
+        <div className='skillexpand flex justify-around'>{skillset.map((e, index) => {
           return (<Expandables
             key={index}
             domain={e.domain}

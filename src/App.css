@@ -89,3 +89,63 @@
   object-position: center;
   height: 40px;
  }
+.nav{
+  top:0;
+}
+#projects{
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+
+ @media (max-width: 400px) {
+  .nav{
+    position: fixed;
+    top: 86vh !important;
+    color: black !important;
+    background-color: white !important;
+    border-radius: 25px;
+    font-size: 2vmin;
+    text-align: center;
+  }
+
+  #projects ul{
+    flex-direction: row;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading{
+    font-size: 10vmin !important;
+    text-align:center;
+  }
+
+  .webd, .footerimg {
+    display: none;
+  }
+  .bio_container{
+    width: 100% !important;
+  }
+
+  .skillexpand {
+    display: flex;
+    flex-direction: column;
+    gap:10px !important;
+  }
+
+  .expandable{
+    width: 90% !important;
+    margin: auto;
+  }
+  #projects{
+    width: 100% !important;
+    gap: 20px;
+  }
+  .project-container {
+    width: 90vw !important;
+    border-radius: 20px;
+  }
+}

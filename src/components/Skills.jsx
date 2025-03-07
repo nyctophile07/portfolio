@@ -9,7 +9,7 @@ function Skills(props) {
             color: "#000",
             scale:1.03
             , transition: { duration: 0.2 }}            
-         } key={index} className="skill cursor-pointer">{skill}</motion.div>
+         } key={index} className="text-[2vmin] skill cursor-pointer">{skill}</motion.div>
         )
     })
 )}
