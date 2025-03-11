@@ -7,13 +7,13 @@ function Expandables({ isExpanded, onHover, domain, skills, link, linkText }) {
         <motion.div
             className={`flex flex-col gap-4 expandable boxshadow ${isExpanded ? 'expanded' : 'compressed'}`}
             onMouseEnter={onHover}
-            initial={{ width: '150px',height:'fit-content' }}
-            animate={{ width: isExpanded ? '40%' : '28%' }}
+            initial={{ width: '30vw',height:'fit-content' }}
+            animate={{ width: isExpanded ? '90%' : '48%' }}
             transition={{ duration: 0.3 }}
         >
             <motion.span
                 className="title text-wrap"
-                animate={{ fontSize: isExpanded ? '1.5rem' : '2.1rem' }}
+                animate={{ fontSize: isExpanded ? '2rem' : '1.2rem' }}
                 transition={{ duration: 0.3 }}
             >
                 {domain}
@@ -22,12 +22,14 @@ function Expandables({ isExpanded, onHover, domain, skills, link, linkText }) {
                 <ul typeof='circle'>
                      {skills.map((e,index)=>{
                         return(
-                            <li className='text-wrap text-[2.5vmin]' key={index}>{e}</li>
+                            <li className='text-wrap text-[2.5vmin]' key={index} dangerouslySetInnerHTML={{ __html: e }}></li>
                          )
                      })}
                 </ul>
             )}
-           {isExpanded && (<a className='px-6 py-3 rounded-full bg-black text-white w-min text-sm' href={link}>{linkText}</a>)} 
+             { 
+             link && isExpanded && (<a className='px-6 py-3 rounded-full bg-black text-white w-min text-sm' href={link}>{linkText}</a>)
+             }
         </motion.div>
     );
 }

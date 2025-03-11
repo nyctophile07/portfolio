@@ -10,7 +10,7 @@ function Bio() {
 
   return (
     <div className=" bio_container flex flex-col justify-center align-text-bottom gap-10 w-[50%]">
-        <div className="bio text-[2.4vmin]"><span className='text-blue-300'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm Suvam Choudhury from Odisha, India.</span>{bio}</div>
+        <div className="bio text-[2.6vmin]"><span className='text-blue-300'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm Suvam Choudhury from Odisha, India.</span>{bio}</div>
         <div>
         <Skills list={skills}/>
         </div>

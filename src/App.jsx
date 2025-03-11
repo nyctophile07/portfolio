@@ -5,6 +5,7 @@ import '@fontsource/poppins/400.css'; // Import Poppins 400 weight (regular)
 import '@fontsource/poppins/700.css'; // Import Poppins 700 weight (bold)
 
 import { motion, useAnimation } from 'framer-motion';
+import {skillset, project} from './Data';
 import Navbar from './components/Navbar';
 import './App.css';
 import Title from './components/Title';
@@ -14,49 +15,14 @@ import Bio from './components/Bio';
 import Expandables from './components/Expandables';
 import Exp from './components/Exp';
 import Project from './components/Project';
+
+import brain from './components/assets/brain.png';
 import img1 from './components/assets/gallery.png';
-
-
-import dzinkImage from './components/assets/1730353689305-1.png';
-import elibraryImage from './components/assets/1730366272485-1.png';
 import Footer from './components/Footer';
 
 
 function App() {
-  const skillset = [
-    {
-      domain: "Coding </>",
-      skills: ["Languages : Javascript, Python, Java, C++, HTML ,CSS, PHP",
-        "Frameworks/Libraries : React Native, React, Spring and Multiple Component Libraries",
-        "Other Tools : Git, Github, MySQL, MongoDB, Jenkins",
-        "UI/UX: Canva, Figma"],
-      link: "#experience",
-      linkText: "View Projects"
-    },
-    {
-      domain: "Films & Photography",
-      skills: ["Do enjoy to capture the moments & stories whether it's a still shot or a moving picture.",
-        "Sometimes express my thoughts via words."],
-      link: "https://www.instagram.com/_.ancestor85._/",
-      linkText: "Instagram"
-    },
-    {
-      domain: "Video Editing & GFX",
-      skills: ["I love video editing and graphic design as I enjoy representing stories through the art of visual storytelling.", "Photoshop, Davinci Resolve, Premiere Pro"],
-      link: "https://www.instagram.com/grafix.me/",
-      linkText: "My works"
-    },
-  ]
-  const project= [
-    {img: dzinkImage,
-      title:"DZINK",
-        desc:"An Ecom. web app featuring a diverse collection of merchandise across a wide range of categories and varieties.",
-      link:"https://dzink.rf.gd/"},
-    { img: elibraryImage,
-      title:"e-Library",
-        desc:"Explore diverse genres, engage in discussions, and join a community passionate about reading and learning.",
-      link:"https://elib.rf.gd/"}
-  ]
+  
   const controls = useAnimation();
   const [expandedIndex, setExpandedIndex] = useState(0);
 
@@ -64,24 +30,22 @@ function App() {
 
   return (
     <>
-      <header className="App-header">
+      <header  id="about" className="App-header">
         <Hero />
         <Navbar />
         <Title />
       </header>
       <motion.section
-        id="about"
-        className="text-white w-[80vw] m-auto flex justify-between pt-5"
+        className="text-white w-[80vw] mt-2 m-auto flex justify-between pt-5"
         animate={{opacity: [0, 1]}}
         transition={{ duration: 2 }}
       >
         <Webd />
         <Bio />
       </motion.section>
-      <section id='skillset' className='w-[80vw] m-auto mb-5 py-35 flex flex-col gap-5'>
-        <div><h2 className= 'heading text-left text-4xl text-blue-300 font-bold'>Things i have learnt</h2></div>
+      <section id='skillset' className='w-[80vw] m-auto mb-5 py-35 flex gap-5'>
 
-        <div className='skillexpand flex justify-around'>{skillset.map((e, index) => {
+        <div className='skillexpand justify-around gap-2 flex flex-col'>{skillset.map((e, index) => {
           return (<Expandables
             key={index}
             domain={e.domain}
@@ -92,6 +56,9 @@ function App() {
             onHover={() => setExpandedIndex(index)}
           />)
         })}</div>
+      <div className='flex flex-col justify-center align-middle' >
+        <img id='brain' className='w-[30vmin] mx-auto' src={brain} alt="brain" />
+        <h2 className= 'mx-auto heading text-left text-5xl text-blue-300 font-bold'>Knowledge Stack</h2></div>
       </section>
 
       <section id='experience' className='w-[75vw] flex flex-col gap-3 m-auto py-30'>
